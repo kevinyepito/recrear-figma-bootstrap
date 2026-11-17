@@ -1,0 +1,268 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+:root {
+    --nav-color: #41424E;
+    --main-color: #32323D;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*header--------------------------------------------*/
+header {
+    background-color: var(--nav-color);
+}
+
+header nav h2 {
+    text-decoration: underline double;
+    color: white;
+}
+
+header nav svg {
+    fill: red;
+}
+
+header nav ul {
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+header nav ul li a:active,
+header nav ul li a:hover {
+    color: red;
+}
+
+#compras,
+#busqueda {
+    fill: gray;
+}
+
+#compras:active,
+#compras:hover,
+#busqueda:active,
+#busqueda:hover {
+    fill: red;
+}
+
+header nav input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid red;
+}
+
+/*main -------------------*/
+
+#section-1 {
+    color: white;
+    background-color: var(--main-color);
+    padding: 3rem;
+    overflow: hidden;
+}
+
+main .info-container .info {
+    color: white;
+    background-color: #CCCCCC;
+
+}
+
+main .info-container .row>div:first-child .info p {
+    font-size: 3rem;
+}
+
+main .info-container .row>div:last-child .info p {
+    color: gray;
+}
+
+main .info-container span {
+    color: red;
+}
+
+.stats-section-1 {
+    border-right: solid gray 1px;
+}
+
+.stats-section-1:last-child {
+    border-right: none;
+}
+
+#stats-container .stats-text {
+    color: gray;
+}
+
+#section-1 img {
+    transform: translateX(30%);
+}
+
+.socials-article {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.socials-article svg:hover {
+    cursor: pointer;
+    fill: red;
+}
+
+.socials-article h3 {
+    text-align: center;
+}
+
+#section-2 .container {
+    background-color: #D9D9D9;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#section-2 .row {
+    row-gap: 2rem;
+}
+
+#section-3 p {
+    color: gray;
+}
+
+#section-3 .row:nth-child(2) .col-lg-8 {
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+#section-3 .row:nth-child(2) .col-lg-8 h3,
+#section-3 .row:nth-child(2) .col-lg-8 p {
+    color: white;
+}
+
+#section-3 .row:nth-child(2) img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+#section-3 .row:nth-child(2) .col-lg-8>div {
+    flex: 1;
+}
+
+
+#section-3 .services-container {
+    border: 1px solid red;
+    padding: 2rem;
+    row-gap: 1.5rem;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+}
+
+#section-3 .services-container .d-flex {
+    align-items: center;
+    gap: 1rem;
+}
+
+#section-3 .services-container svg {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.6rem;
+    color: white;
+    background-color: red;
+    flex-shrink: 0;
+}
+
+#section-4 {
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: #F5F5F6;
+}
+
+#section-4 svg {
+    fill: red;
+}
+
+#section-4 p {
+    color: gray;
+}
+
+#section-4 p span {
+    color: black;
+}
+
+#section-4 img {
+    box-shadow: -1rem 1rem 0 0 red;
+    margin-bottom: 1rem;
+}
+
+#section-5 {
+    background-color: #F5F5F6;
+    padding: 5rem;
+}
+
+#section-6 .tipo {
+    gap: 5rem;
+}
+
+#section-7 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 5rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../assets/car-local.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#section-7 h2 {
+    color: white;
+}
+
+#section-7 article {
+    background-color: white;
+    box-shadow: -1rem 1rem 0 0 gray;
+    max-width: 60%;
+}
+
+#section-8 {
+    background-color: #F5F5F6;
+}
+
+#section-8 svg {
+    fill: red;
+}
+
+#section-8 p {
+    color: gray;
+}
+
+/*footer---------------------------------*/
+footer {
+    background-color: #060B1D;
+    color: white;
+}
+
+footer svg,
+footer p:hover {
+    cursor: default;
+    color: red;
+    fill: red;
+}
+
+footer .row:last-child {
+    color: gray;
+}
